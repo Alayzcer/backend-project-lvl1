@@ -17,4 +17,5 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Run linter
+        run: npm ci
         run: make lint
