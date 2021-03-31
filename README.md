@@ -6,18 +6,26 @@
 
 ![Lint code](https://github.com/Alayzcer/backend-project-lvl1/actions/workflows/lint-sources.yml/badge.svg)
 
-#### brain even & calc
+#### brain games
 
-[![asciicast](https://asciinema.org/a/404222.svg)](https://asciinema.org/a/404222)
+[![asciicast](https://asciinema.org/a/404246.svg)](https://asciinema.org/a/404246)
+
+#### brain calc
+
+[![asciicast](https://asciinema.org/a/404248.svg)](https://asciinema.org/a/404248)
+
+#### brain even
+
+[![asciicast](https://asciinema.org/a/404249.svg)](https://asciinema.org/a/404249)
 
 #### brain greatest common divisor
 
-[![asciicast](https://asciinema.org/a/404230.svg)](https://asciinema.org/a/404230)
+[![asciicast](https://asciinema.org/a/404250.svg)](https://asciinema.org/a/404250)
 
 #### brain-progression
 
-[![asciicast](https://asciinema.org/a/404235.svg)](https://asciinema.org/a/404235)
+[![asciicast](https://asciinema.org/a/404252.svg)](https://asciinema.org/a/404252)
 
 #### brain-prime
 
-[![asciicast](https://asciinema.org/a/404239.svg)](https://asciinema.org/a/404239)
+[![asciicast](https://asciinema.org/a/404251.svg)](https://asciinema.org/a/404251)
