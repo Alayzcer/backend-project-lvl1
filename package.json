@@ -4,7 +4,7 @@
   "description": "[![Actions Status](https://github.com/Alayzcer/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Alayzcer/backend-project-lvl1/actions)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bin/brain-games.js"
+    "start": "node node_modules/bin/brain-games.js"
   },
   "repository": {
     "type": "git",
