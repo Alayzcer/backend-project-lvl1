@@ -11,3 +11,6 @@ brain even & calc:
 
 brain greatest common divisor:
 [![asciicast](https://asciinema.org/a/404230.svg)](https://asciinema.org/a/404230)
+
+brain-progression:
+[![asciicast](https://asciinema.org/a/404235.svg)](https://asciinema.org/a/404235)
