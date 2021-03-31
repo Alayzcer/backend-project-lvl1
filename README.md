@@ -6,4 +6,8 @@
 
 ![Lint code](https://github.com/Alayzcer/backend-project-lvl1/actions/workflows/lint-sources.yml/badge.svg)
 
+brain even & calc:
 [![asciicast](https://asciinema.org/a/404222.svg)](https://asciinema.org/a/404222)
+
+brain greatest common divisor:
+[![asciicast](https://asciinema.org/a/404230.svg)](https://asciinema.org/a/404230)
