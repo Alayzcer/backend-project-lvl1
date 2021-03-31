@@ -12,4 +12,5 @@ function getUserName() {
 function askMe(text) {
   return readlineSync.question(text);
 }
+
 export { welcome, getUserName, askMe };
