@@ -1,10 +1,10 @@
 {
-  "name": "n",
-  "version": "2.2.0",
+  "name": "@hexlet/code",
+  "version": "2.3.0",
   "description": "[![Actions Status](https://github.com/Alayzcer/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Alayzcer/backend-project-lvl1/actions)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node node_modules/bin/brain-games.js"
+    "start": "node bin/brain-games.js"
   },
   "repository": {
     "type": "git",

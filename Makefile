@@ -1,12 +1,3 @@
-brain-calc:
-	node bin/brain-calc.js
-
-brain-even:
-	node bin/brain-even.js
-
-brain-games:
-	node bin/brain-games.js
-
 install:
 	npm ci
 
@@ -15,3 +6,10 @@ publish:
 
 lint:
 	npx eslint .
+
+build:
+	docker build -t hexlet-code:1.0.0 .
+
+run:
+	# run npm link for brain games executing!
+	docker run --rm -it hexlet-code:1.0.0 
