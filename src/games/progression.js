@@ -19,12 +19,12 @@ function getProgression() {
 
 function makeQuestion(progression, hideIndex) {
   const swapItem = progression[hideIndex];
-  const temp = progression.map((x) => (swapItem === x ? ".." : x));
-  return temp.join(" ");
+  const temp = progression.map((x) => (swapItem === x ? '..' : x));
+  return temp.join(' ');
 }
 
 function progressionGetTask() {
-  return "What number is missing in the progression?";
+  return 'What number is missing in the progression?';
 }
 
 function progressionGetContext() {

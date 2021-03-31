@@ -4,13 +4,13 @@ function getRandom(from, to) {
 }
 
 function evenGetTask() {
-  return "What is the result of the expression?";
+  return 'What is the result of the expression?';
 }
 
 const arrayOfMethods = [
-  { name: "+", call: (x, y) => x + y },
-  { name: "-", call: (x, y) => x - y },
-  { name: "*", call: (x, y) => x * y },
+  { name: '+', call: (x, y) => x + y },
+  { name: '-', call: (x, y) => x - y },
+  { name: '*', call: (x, y) => x * y },
 ];
 
 function evenGetContext() {

@@ -18,7 +18,7 @@ function primeGetTask() {
 
 function primeGetContext() {
   const no = getRandom(2, 100);
-  const correctAnswer = checkSimpleNumber(no) ? "yes" : "no";
+  const correctAnswer = checkSimpleNumber(no) ? 'yes' : 'no';
   return {
     question: no,
     answer: correctAnswer,

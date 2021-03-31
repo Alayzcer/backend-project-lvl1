@@ -1,4 +1,4 @@
-import { welcome, getUserName, askMe } from "./cli.js";
+import { welcome, getUserName, askMe } from './cli.js';
 
 function writeRightAnswer(correctAnswer, userAnswer) {
   const msg = `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`;
@@ -11,12 +11,12 @@ function playGame(userName, gameData) {
   while (retryQuantity > 0) {
     const context = gameData.getContext();
     console.log(`Question: ${gameData.getQuestion(context)}`);
-    const userAnswer = askMe("Your answer: ");
+    const userAnswer = askMe('Your answer: ');
     if (!gameData.checkAnswer(context, userAnswer)) {
       writeRightAnswer(gameData.getAnswer(context), userAnswer);
       return false;
     }
-    console.log("Correct!");
+    console.log('Correct!');
     retryQuantity -= 1;
   }
   return true;

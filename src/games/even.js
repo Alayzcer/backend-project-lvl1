@@ -11,7 +11,7 @@ function evenGetContext() {
   const number = getRandom(1, 100);
   return {
     no: number,
-    answer: number % 2 === 0 ? "yes" : "no",
+    answer: number % 2 === 0 ? 'yes' : 'no',
   };
 }
 

@@ -15,7 +15,7 @@ function getGcd(x, y) {
 }
 
 function gcdGetTask() {
-  return "Find the greatest common divisor of given numbers.";
+  return 'Find the greatest common divisor of given numbers.';
 }
 
 function gcdGetContext() {
