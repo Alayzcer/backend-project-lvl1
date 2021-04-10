@@ -12,9 +12,7 @@ export default function makeGameData() {
       };
     },
     getQuestion: (context) => context.no,
-    checkAnswer: (context, userAnswer) => {
-      return context.answer === userAnswer.toLowerCase();
-    },
+    checkAnswer: (context, userAnswer) => context.answer === userAnswer.toLowerCase(),
     getAnswer: (context) => context.answer,
   };
 }
