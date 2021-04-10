@@ -2,7 +2,7 @@ import getRandom from '../random.js';
 
 function checkSimpleNumber(no) {
   for (let i = 2; i < no; i += 1) {
-    if (no % i !== 0) {
+    if (no % i === 0) {
       return false;
     }
   }
