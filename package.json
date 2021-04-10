@@ -1,6 +1,6 @@
 {
   "name": "@hexlet/code",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "description": "It's a collection of brain games. It provides six games like so calculator, progression, greatest common divisor and etc.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

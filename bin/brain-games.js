@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import startGame from '../src/game_core.js';
+import playGame from '../src/cli.js';
 
-startGame(null);
+playGame().welcome();
