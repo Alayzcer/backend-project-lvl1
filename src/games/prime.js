@@ -11,8 +11,9 @@ function checkSimpleNumber(no) {
 
 export default function makeGameData() {
   return {
-    getTask: () =>
-      'Answer "yes" if given number is prime. Otherwise answer "no".',
+    getTask: () => {
+      return 'Answer "yes" if given number is prime. Otherwise answer "no".';
+    },
     getContext: () => {
       const no = getRandom(2, 100);
       const correctAnswer = checkSimpleNumber(no) ? 'yes' : 'no';
@@ -22,8 +23,9 @@ export default function makeGameData() {
       };
     },
     getQuestion: (context) => context.question,
-    checkAnswer: (context, userAnswer) =>
-      context.answer === userAnswer.toLowerCase(),
+    checkAnswer: (context, userAnswer) => {
+      return context.answer === userAnswer.toLowerCase();
+    },
     getAnswer: (context) => context.answer,
   };
 }

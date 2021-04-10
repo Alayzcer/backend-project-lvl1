@@ -34,8 +34,9 @@ export default function makeGameData() {
       };
     },
     getQuestion: (context) => context.question,
-    checkAnswer: (context, userAnswer) =>
-      context.answer === parseInt(userAnswer, 10),
+    checkAnswer: (context, userAnswer) => {
+      return context.answer === parseInt(userAnswer, 10);
+    },
     getAnswer: (context) => context.answer,
   };
 }
