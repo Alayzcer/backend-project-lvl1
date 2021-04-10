@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "2.3.0",
-  "description": "[![Actions Status](https://github.com/Alayzcer/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Alayzcer/backend-project-lvl1/actions)",
+  "description": "It's a collection of brain games. It provides six games like so calculator, progression, greatest common divisor and etc.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node node_modules/bin/brain-games.js"
