@@ -2,17 +2,23 @@
 
 [![Actions Status](https://github.com/Alayzcer/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Alayzcer/backend-project-lvl1/actions)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://github.com/Alayzcer/backend-project-lvl1)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/Alayzcer/backend-project-lvl1)
 
 [![Lint code](https://github.com/Alayzcer/backend-project-lvl1/actions/workflows/lint-sources.yml/badge.svg)](https://github.com/Alayzcer/backend-project-lvl1/actions/workflows/lint-sources.yml)
 
 ## install
 
 For playing you can use Docker:
-make build
-make run
-npm link
-and now games are available:
+
+- make build
+- make run
+- npm link
+
+or install by make:
+
+- make install
+
+Games are available:
 
 - brain-games
 - brain-even
