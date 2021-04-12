@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
-import playGame from '../src/cli.js';
+import welcome from '../src/cli.js';
+import playGame from '../src/engine.js';
+import makeGameData from '../src/games/prime.js';
 
-playGame().prime();
+const userName = welcome();
+const data = makeGameData();
+playGame(userName, data);

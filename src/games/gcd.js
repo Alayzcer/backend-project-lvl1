@@ -13,18 +13,15 @@ function getGcd(x, y) {
 
 export default function makeGameData() {
   return {
-    getTask: () => 'Find the greatest common divisor of given numbers.',
-    getContext: () => {
+    title: 'Find the greatest common divisor of given numbers.',
+    makeTask: () => {
       const x = getRandom(1, 30);
       const y = getRandom(1, 30);
-      const result = getGcd(x, y);
+      const result = getGcd(x, y).toString();
       return {
         question: `${x} ${y}`,
-        answer: result,
+        correctAnswer: result,
       };
     },
-    getQuestion: (context) => context.question,
-    checkAnswer: (context, userAnswer) => context.answer === parseInt(userAnswer, 10),
-    getAnswer: (context) => context.answer,
   };
 }

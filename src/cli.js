@@ -1,17 +1,8 @@
-import startGame from './engine.js';
-import calcGame from './games/calc.js';
-import evenGame from './games/even.js';
-import gcdGame from './games/gcd.js';
-import primeGame from './games/prime.js';
-import progressionGame from './games/progression.js';
+import readlineSync from 'readline-sync';
 
-export default function playGame() {
-  return {
-    welcome: () => startGame(null),
-    calc: () => startGame(calcGame()),
-    even: () => startGame(evenGame()),
-    gcd: () => startGame(gcdGame()),
-    prime: () => startGame(primeGame()),
-    progression: () => startGame(progressionGame()),
-  };
+export default function welcome() {
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name?: ');
+  console.log(`Hello, ${userName}`);
+  return userName;
 }

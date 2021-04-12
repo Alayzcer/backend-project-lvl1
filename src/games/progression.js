@@ -22,19 +22,16 @@ function makeQuestion(progression, hideIndex) {
 
 export default function makeGameData() {
   return {
-    getTask: () => 'What number is missing in the progression?',
-    getContext: () => {
+    title: 'What number is missing in the progression?',
+    makeTask: () => {
       const progression = getProgression();
       const hideIndex = getRandom(2, progression.length - 1);
-      const correctAnswer = progression[hideIndex];
-      const textProg = makeQuestion(progression, hideIndex);
+      const rightAnswer = progression[hideIndex].toString();
+      const taskQuestion = makeQuestion(progression, hideIndex);
       return {
-        question: textProg,
-        answer: correctAnswer,
+        question: taskQuestion,
+        correctAnswer: rightAnswer,
       };
     },
-    getQuestion: (context) => context.question,
-    checkAnswer: (context, userAnswer) => context.answer === parseInt(userAnswer, 10),
-    getAnswer: (context) => context.answer,
   };
 }
