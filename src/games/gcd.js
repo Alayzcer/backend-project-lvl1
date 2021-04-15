@@ -14,7 +14,7 @@ function getGcd(x, y) {
 function makeGameData() {
   return {
     title: 'Find the greatest common divisor of given numbers.',
-    makeRound: () => {
+    getRound: () => {
       const x = getRandom(1, 30);
       const y = getRandom(1, 30);
       const result = getGcd(x, y).toString();

@@ -5,7 +5,7 @@ const isEven = (x) => x % 2 === 0;
 function makeGameData() {
   return {
     title: 'Answer "yes" if the number is even, otherwise answer "no".',
-    makeRound: () => {
+    getRound: () => {
       const number = getRandom(1, 100);
       return {
         question: number.toString(),

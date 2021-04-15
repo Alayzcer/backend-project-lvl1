@@ -3,10 +3,10 @@ import readlineSync from 'readline-sync';
 const roundsCount = 3;
 
 function startGame(userName, gameData) {
-  const { title, makeRound } = gameData;
+  const { title, getRound } = gameData;
   console.log(title);
   for (let i = 0; i < roundsCount; i += 1) {
-    const { question, correctAnswer } = makeRound();
+    const { question, correctAnswer } = getRound();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (correctAnswer !== userAnswer) {

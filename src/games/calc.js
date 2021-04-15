@@ -9,7 +9,7 @@ const operations = [
 function makeGameData() {
   return {
     title: 'What is the result of the expression?',
-    makeRound: () => {
+    getRound: () => {
       const operationIndex = getRandom(0, 2);
       const x = getRandom(1, 10);
       const y = getRandom(1, 10);

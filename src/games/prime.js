@@ -12,7 +12,7 @@ function isPrime(no) {
 function makeGameData() {
   return {
     title: 'Answer "yes" if given number is prime. Otherwise answer "no".',
-    makeRound: () => {
+    getRound: () => {
       const number = getRandom(2, 100).toString();
       const rightAnswer = isPrime(number) ? 'yes' : 'no';
       return {

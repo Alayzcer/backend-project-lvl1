@@ -22,7 +22,7 @@ function makeQuestion(progression, hideIndex) {
 function makeGameData() {
   return {
     title: 'What number is missing in the progression?',
-    makeRound: () => {
+    getRound: () => {
       const first = getRandom(1, 30);
       const step = getRandom(2, 10);
       const progression = getProgression(first, step, progressionSize);
