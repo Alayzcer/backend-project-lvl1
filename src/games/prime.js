@@ -9,18 +9,20 @@ function isPrime(no) {
   return true;
 }
 
-function makeGameData() {
+function generateRound() {
+  const number = generateRandomInt(2, 100).toString();
+  const rightAnswer = isPrime(number) ? 'yes' : 'no';
   return {
-    title: 'Answer "yes" if given number is prime. Otherwise answer "no".',
-    getRound: () => {
-      const number = generateRandomInt(2, 100).toString();
-      const rightAnswer = isPrime(number) ? 'yes' : 'no';
-      return {
-        question: number,
-        correctAnswer: rightAnswer,
-      };
-    },
+    question: number,
+    correctAnswer: rightAnswer,
   };
 }
 
-export { isPrime, makeGameData };
+function makeGameData() {
+  return {
+    title: 'Answer "yes" if given number is prime. Otherwise answer "no".',
+    getRound: generateRound,
+  };
+}
+
+export { isPrime, generateRound, makeGameData };

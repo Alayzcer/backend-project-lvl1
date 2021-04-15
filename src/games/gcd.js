@@ -11,19 +11,21 @@ function getGcd(x, y) {
   return preLast;
 }
 
-function makeGameData() {
+function generateRound() {
+  const x = generateRandomInt(1, 30);
+  const y = generateRandomInt(1, 30);
+  const result = getGcd(x, y).toString();
   return {
-    title: 'Find the greatest common divisor of given numbers.',
-    getRound: () => {
-      const x = generateRandomInt(1, 30);
-      const y = generateRandomInt(1, 30);
-      const result = getGcd(x, y).toString();
-      return {
-        question: `${x} ${y}`,
-        correctAnswer: result,
-      };
-    },
+    question: `${x} ${y}`,
+    correctAnswer: result,
   };
 }
 
-export { getGcd, makeGameData };
+function makeGameData() {
+  return {
+    title: 'Find the greatest common divisor of given numbers.',
+    getRound: generateRound,
+  };
+}
+
+export { getGcd, generateRound, makeGameData };
