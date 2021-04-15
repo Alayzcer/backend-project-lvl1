@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 const roundsCount = 3;
 
-function startGame(userName, gameData) {
+function playGame(userName, gameData) {
   const { title, getRound } = gameData;
   console.log(title);
   for (let i = 0; i < roundsCount; i += 1) {
@@ -21,4 +21,4 @@ function startGame(userName, gameData) {
   console.log(`Congratulations, ${userName}!`);
 }
 
-export { roundsCount, startGame };
+export { roundsCount, playGame };
