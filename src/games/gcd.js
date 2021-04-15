@@ -11,10 +11,10 @@ function getGcd(x, y) {
   return preLast;
 }
 
-export default function makeGameData() {
+function makeGameData() {
   return {
     title: 'Find the greatest common divisor of given numbers.',
-    makeTask: () => {
+    makeRound: () => {
       const x = getRandom(1, 30);
       const y = getRandom(1, 30);
       const result = getGcd(x, y).toString();
@@ -25,3 +25,5 @@ export default function makeGameData() {
     },
   };
 }
+
+export { getGcd, makeGameData };

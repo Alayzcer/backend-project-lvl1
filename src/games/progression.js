@@ -1,9 +1,8 @@
 import getRandom from '../random.js';
 
-function getProgression() {
-  const first = getRandom(1, 30);
-  const step = getRandom(2, 10);
-  const size = 10;
+const progressionSize = 10;
+
+function getProgression(first, step, size) {
   const prog = [];
   prog.push(first);
   let last = first;
@@ -20,11 +19,13 @@ function makeQuestion(progression, hideIndex) {
   return temp.join(' ');
 }
 
-export default function makeGameData() {
+function makeGameData() {
   return {
     title: 'What number is missing in the progression?',
-    makeTask: () => {
-      const progression = getProgression();
+    makeRound: () => {
+      const first = getRandom(1, 30);
+      const step = getRandom(2, 10);
+      const progression = getProgression(first, step, progressionSize);
       const hideIndex = getRandom(2, progression.length - 1);
       const rightAnswer = progression[hideIndex].toString();
       const taskQuestion = makeQuestion(progression, hideIndex);
@@ -35,3 +36,5 @@ export default function makeGameData() {
     },
   };
 }
+
+export { progressionSize, getProgression, makeGameData };

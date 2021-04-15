@@ -1,6 +1,6 @@
 import getRandom from '../random.js';
 
-function checkSimpleNumber(no) {
+function isPrime(no) {
   for (let i = 2; i < no; i += 1) {
     if (no % i === 0) {
       return false;
@@ -9,16 +9,18 @@ function checkSimpleNumber(no) {
   return true;
 }
 
-export default function makeGameData() {
+function makeGameData() {
   return {
     title: 'Answer "yes" if given number is prime. Otherwise answer "no".',
-    makeTask: () => {
-      const no = getRandom(2, 100).toString();
-      const rightAnswer = checkSimpleNumber(no) ? 'yes' : 'no';
+    makeRound: () => {
+      const number = getRandom(2, 100).toString();
+      const rightAnswer = isPrime(number) ? 'yes' : 'no';
       return {
-        question: no,
+        question: number,
         correctAnswer: rightAnswer,
       };
     },
   };
 }
+
+export { isPrime, makeGameData };

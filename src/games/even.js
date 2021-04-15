@@ -1,11 +1,12 @@
 import getRandom from '../random.js';
 
-export default function makeGameData() {
+const isEven = (x) => x % 2 === 0;
+
+function makeGameData() {
   return {
     title: 'Answer "yes" if the number is even, otherwise answer "no".',
-    makeTask: () => {
+    makeRound: () => {
       const number = getRandom(1, 100);
-      const isEven = (x) => x % 2 === 0;
       return {
         question: number.toString(),
         correctAnswer: isEven(number) ? 'yes' : 'no',
@@ -13,3 +14,5 @@ export default function makeGameData() {
     },
   };
 }
+
+export { isEven, makeGameData };

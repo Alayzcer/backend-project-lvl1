@@ -8,15 +8,14 @@
 
 ## install
 
-For playing you can use Docker:
-
-- make build
-- make run
-- npm link
-
-or install by make:
+For playing you need to have a nodejs version 15. How to install nodejs see on https://nodejs.org
+for install games use make:
 
 - make install
+
+Or you can use Docker:
+
+- make run
 
 Games are available:
 
