@@ -8,8 +8,8 @@
 
 ## install
 
-For playing you need to have a nodejs version 15. How to install nodejs see on https://nodejs.org
-for install games use make:
+For playing you need to have a nodejs version 15. How to install nodejs see on https://nodejs.org.
+For install games use make:
 
 - make install
 
