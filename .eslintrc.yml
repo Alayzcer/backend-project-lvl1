@@ -2,7 +2,7 @@ env:
   node: true
   es2021: true
 extends:
-  # - 'eslint:recommended'
+  - 'eslint:recommended'
   - 'airbnb-base'
   - 'prettier'
 parserOptions:
@@ -12,3 +12,4 @@ rules:
   no-console: 0
   import/extensions: 0
   quotes: off
+  prettier/prettier: error
