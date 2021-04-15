@@ -12,4 +12,4 @@ rules:
   no-console: 0
   import/extensions: 0
   quotes: off
-  prettier/prettier: error
+  no-multiple-empty-lines: error

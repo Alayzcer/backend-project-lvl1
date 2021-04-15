@@ -39,10 +39,6 @@ function makeGameData() {
   };
 }
 
-
-
-
-
 export {
   progressionSize, getProgression, generateRound, makeGameData,
 };
