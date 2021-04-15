@@ -1,4 +1,4 @@
-import getRandom from '../random.js';
+import generateRandomInt from '../helpers.js';
 
 const progressionSize = 10;
 
@@ -23,10 +23,10 @@ function makeGameData() {
   return {
     title: 'What number is missing in the progression?',
     getRound: () => {
-      const first = getRandom(1, 30);
-      const step = getRandom(2, 10);
+      const first = generateRandomInt(1, 30);
+      const step = generateRandomInt(2, 10);
       const progression = getProgression(first, step, progressionSize);
-      const hideIndex = getRandom(2, progression.length - 1);
+      const hideIndex = generateRandomInt(2, progression.length - 1);
       const rightAnswer = progression[hideIndex].toString();
       const taskQuestion = makeQuestion(progression, hideIndex);
       return {

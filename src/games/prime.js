@@ -1,4 +1,4 @@
-import getRandom from '../random.js';
+import generateRandomInt from '../helpers.js';
 
 function isPrime(no) {
   for (let i = 2; i < no; i += 1) {
@@ -13,7 +13,7 @@ function makeGameData() {
   return {
     title: 'Answer "yes" if given number is prime. Otherwise answer "no".',
     getRound: () => {
-      const number = getRandom(2, 100).toString();
+      const number = generateRandomInt(2, 100).toString();
       const rightAnswer = isPrime(number) ? 'yes' : 'no';
       return {
         question: number,
