@@ -1,4 +1,5 @@
 import generateRandomInt from '../helpers.js';
+import { startGame } from '../engine.js';
 
 const progressionSize = 10;
 
@@ -39,6 +40,4 @@ function makeGameData() {
   };
 }
 
-export {
-  progressionSize, getProgression, generateRound, makeGameData,
-};
+export default () => startGame(makeGameData());

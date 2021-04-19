@@ -1,6 +1,5 @@
-import generateRandomInt from '../helpers.js';
-
-const isEven = (x) => x % 2 === 0;
+import { generateRandomInt, isEven } from '../helpers.js';
+import { startGame } from '../engine.js';
 
 function generateRound() {
   const number = generateRandomInt(1, 100);
@@ -17,4 +16,4 @@ function makeGameData() {
   };
 }
 
-export { isEven, generateRound, makeGameData };
+export default () => startGame(makeGameData());

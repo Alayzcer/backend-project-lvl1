@@ -1,4 +1,5 @@
-import generateRandomInt from '../helpers.js';
+import { generateRandomInt } from '../helpers.js';
+import { startGame } from '../engine.js';
 
 function getGcd(x, y) {
   let preLast = x;
@@ -28,4 +29,4 @@ function makeGameData() {
   };
 }
 
-export { getGcd, generateRound, makeGameData };
+export default () => startGame(makeGameData());

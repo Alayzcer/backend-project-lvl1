@@ -1,13 +1,5 @@
-import generateRandomInt from '../helpers.js';
-
-function isPrime(no) {
-  for (let i = 2; i < no; i += 1) {
-    if (no % i === 0) {
-      return false;
-    }
-  }
-  return true;
-}
+import { generateRandomInt, isPrime } from '../helpers.js';
+import { startGame } from '../engine.js';
 
 function generateRound() {
   const number = generateRandomInt(2, 100).toString();
@@ -25,4 +17,4 @@ function makeGameData() {
   };
 }
 
-export { isPrime, generateRound, makeGameData };
+export default () => startGame(makeGameData());

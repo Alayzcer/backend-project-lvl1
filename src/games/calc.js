@@ -1,4 +1,5 @@
-import generateRandomInt from '../helpers.js';
+import { generateRandomInt } from '../helpers.js';
+import { startGame } from '../engine.js';
 
 const operations = [
   { name: '+', invoke: (x, y) => x + y },
@@ -25,4 +26,4 @@ function makeGameData() {
   };
 }
 
-export { operations, generateRound, makeGameData };
+export default () => startGame(makeGameData());
