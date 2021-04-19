@@ -8,7 +8,7 @@ const operations = [
 ];
 
 function generateRandomMethod() {
-  const index = generateRandomInt(0, operations.length);
+  const index = generateRandomInt(0, operations.length - 1);
   return operations[index];
 }
 
