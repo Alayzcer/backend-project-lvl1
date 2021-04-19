@@ -4,10 +4,9 @@ import { startGame } from '../engine.js';
 const progressionSize = 10;
 
 function getProgression(first, step, size) {
+  let last = first - step;
   const prog = [];
-  prog.push(first);
-  let last = first;
-  for (let i = 1; i < size; i += 1) {
+  for (let i = 0; i < size; i += 1) {
     last += step;
     prog.push(last);
   }
