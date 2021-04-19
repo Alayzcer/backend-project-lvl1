@@ -7,11 +7,15 @@ const operations = [
   { name: '*', invoke: (x, y) => x * y },
 ];
 
+function generateRandomMethod() {
+  const index = generateRandomInt(0, operations.length);
+  return operations[index];
+}
+
 function generateRound() {
-  const operationIndex = generateRandomInt(0, 2);
   const x = generateRandomInt(1, 10);
   const y = generateRandomInt(1, 10);
-  const method = operations[operationIndex];
+  const method = generateRandomMethod();
   const result = method.invoke(x, y).toString();
   return {
     question: `${x} ${method.name} ${y}`,

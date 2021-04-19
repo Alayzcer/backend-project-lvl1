@@ -3,9 +3,12 @@ function generateRandomInt(from, to) {
   return Math.round(no);
 }
 
-function isPrime(no) {
-  for (let i = 2; i < no; i += 1) {
-    if (no % i === 0) {
+function isPrime(number) {
+  if (number < 2) return false;
+  const startNumber = 2;
+  const middle = number / 2;
+  for (let i = startNumber; i < middle; i += 1) {
+    if (number % i === 0) {
       return false;
     }
   }
