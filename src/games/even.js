@@ -1,5 +1,7 @@
-import { generateRandomInt, isEven } from '../helpers.js';
+import { generateRandomInt } from '../helpers.js';
 import { startGame } from '../engine.js';
+
+const isEven = (x) => x % 2 === 0;
 
 function generateRound() {
   const number = generateRandomInt(1, 100);
