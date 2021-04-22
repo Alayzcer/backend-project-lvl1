@@ -1,4 +1,4 @@
-import { generateRandomInt } from '../helpers.js';
+import generateRandomInt from '../helpers.js';
 import { startGame } from '../engine.js';
 
 function getGcd(x, y) {
